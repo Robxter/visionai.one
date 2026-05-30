@@ -1,0 +1,13 @@
+{
+  "name": "VISION — Intelligent Software for Real Estate",
+  "short_name": "VISION",
+  "description": "Tomorrow's technology to today's solutions. AI assistants and premium web experiences for real-estate agencies.",
+  "icons": [
+    { "src": "/assets/images/favicon/android-chrome-192x192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/assets/images/favicon/android-chrome-512x512.png", "sizes": "512x512", "type": "image/png" }
+  ],
+  "theme_color": "#0a0c10",
+  "background_color": "#0a0c10",
+  "display": "standalone",
+  "start_url": "/"
+}
