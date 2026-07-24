@@ -207,6 +207,26 @@ if (leadForm) {
   });
 }
 
+// ============================================================
+// THEME TOGGLE — Observatory (light, default) / Deep Field (dark)
+// Shares the `vision_theme` key with the dashboards.
+// ============================================================
+const themeToggle = document.getElementById("themeToggle");
+if (themeToggle) {
+  const themeMeta = document.querySelector('meta[name="theme-color"]');
+  const applyTheme = (t) => {
+    document.documentElement.setAttribute("data-theme", t);
+    if (themeMeta) themeMeta.content = t === "dark" ? "#0b0e14" : "#f7f8fa";
+    themeToggle.setAttribute("aria-pressed", String(t === "dark"));
+  };
+  applyTheme(document.documentElement.getAttribute("data-theme") === "dark" ? "dark" : "light");
+  themeToggle.addEventListener("click", () => {
+    const next = document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark";
+    try { localStorage.setItem("vision_theme", next); } catch (e) { /* private mode */ }
+    applyTheme(next);
+  });
+}
+
 // Current year in footer
 const yearEl = document.getElementById("year");
 if (yearEl) yearEl.textContent = new Date().getFullYear();

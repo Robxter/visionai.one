@@ -1,11 +1,12 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en" data-lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vision</title>
+  <title>VISION — Tomorrow's technology to today's solutions</title>
   <meta name="description" content="VISION builds business software that saves time, increases conversion, and automates manual work. AI assistants and polished web experiences for real-estate agencies." />
-  <meta name="theme-color" content="#0a0c10" />
+  <meta name="theme-color" content="#f7f8fa" />
+  <script>document.documentElement.classList.add('js');try{document.documentElement.setAttribute('data-theme', localStorage.getItem('vision_theme')==='dark'?'dark':'light');}catch(e){}</script>
 
   <!-- Open Graph -->
   <meta property="og:title" content="VISION — Tomorrow's technology to today's solutions" />
@@ -30,10 +31,10 @@
   <!-- ============ NAV ============ -->
   <header class="nav">
     <a class="nav-logo" href="index.html">
-      <img src="assets/images/logos/VISION-NewLogo.png" alt="VISION" class="nav-logo-img">
+      <img src="assets/images/logos/VISION-NewLogo.png" alt="" width="36" height="36" class="nav-logo-img">
       VISION
     </a>
-    
+
     <div class="nav-cluster">
       <nav class="nav-links">
         <a href="#services">Services</a>
@@ -47,6 +48,10 @@
         <a href="de/">DE</a>
         <a href="fr/">FR</a>
       </div>
+      <button id="themeToggle" class="theme-toggle" type="button" aria-label="Switch between light and dark theme">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+      </button>
       <a class="btn btn-primary btn-sm" href="#contact">Book a call</a>
     </div>
   </header>
@@ -54,27 +59,41 @@
   <!-- ============ HERO ============ -->
   <section class="hero">
     <div class="container hero-inner">
-      <span class="eyebrow reveal">Software solutions company</span>
-      <h1 class="reveal">Tomorrow's technology to <em>today's</em> solutions.</h1>
-      <p class="hero-sub reveal">
-        VISION builds intelligent software that replaces manual work — AI assistants,
-        lead automation, and premium web experiences that help real-estate agencies
-        respond faster and convert more.
-      </p>
-      <div class="hero-actions reveal">
-        <button class="btn btn-primary" data-open-chat>
-          Launch the assistant
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </button>
-        <a class="btn btn-ghost" href="#services">Explore services</a>
-        <span class="hero-note">Available 24/7 · Powered by DeepSeek</span>
+      <div class="hero-copy">
+        <span class="eyebrow reveal">Software solutions company</span>
+        <h1 class="reveal">Tomorrow's technology to <em>today's</em> solutions.</h1>
+        <p class="hero-sub reveal">
+          VISION builds intelligent software that replaces manual work — AI assistants,
+          lead automation, and premium web experiences that help real-estate agencies
+          respond faster and convert more.
+        </p>
+        <div class="hero-actions reveal">
+          <button class="btn btn-primary" data-open-chat>
+            Launch the assistant
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
+          <a class="btn btn-ghost" href="#services">Explore services</a>
+          <span class="hero-note">Available 24/7 · Powered by DeepSeek</span>
+        </div>
+
+        <div class="hero-stats reveal">
+          <div class="stat"><div class="n">24/7</div><div class="l">Always-on response</div></div>
+          <div class="stat"><div class="n">&lt;1 min</div><div class="l">To qualify a lead</div></div>
+          <div class="stat"><div class="n">4</div><div class="l">Languages supported</div></div>
+        </div>
       </div>
 
-      <div class="hero-stats reveal">
-        <div class="stat"><div class="n">24/7</div><div class="l">Always-on response</div></div>
-        <div class="stat"><div class="n">&lt;1 min</div><div class="l">To qualify a lead</div></div>
-        <div class="stat"><div class="n">4</div><div class="l">Languages supported</div></div>
-      </div>
+      <!-- The VISION lens, drawn as a survey instrument -->
+      <svg class="hero-mark reveal" viewBox="0 0 400 400" aria-hidden="true">
+        <line class="m-axis" x1="200" y1="6" x2="200" y2="24"/>
+        <line class="m-axis" x1="200" y1="376" x2="200" y2="394"/>
+        <line class="m-axis" x1="6" y1="200" x2="24" y2="200"/>
+        <line class="m-axis" x1="376" y1="200" x2="394" y2="200"/>
+        <circle class="m-guide" cx="200" cy="200" r="182"/>
+        <circle class="m-ring" cx="200" cy="200" r="140" pathLength="100"/>
+        <path class="m-arc" d="M 331.6 152.1 A 140 140 0 0 0 247.9 68.4" pathLength="100"/>
+        <circle class="m-core" cx="200" cy="200" r="52"/>
+      </svg>
     </div>
   </section>
 
@@ -138,19 +157,19 @@
 
       <div class="caps reveal">
         <div class="cap">
-          <div class="cap-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m21 21-4.3-4.3"/><circle cx="11" cy="11" r="7"/></svg></div>
+          <div class="cap-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m21 21-4.3-4.3"/><circle cx="11" cy="11" r="7"/></svg></div>
           <div><h3>Property discovery</h3><p>Helps clients find the right property instantly with intelligent, conversational search.</p></div>
         </div>
         <div class="cap">
-          <div class="cap-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/></svg></div>
+          <div class="cap-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/></svg></div>
           <div><h3>Lead qualification</h3><p>Captures contact details and intent automatically, then organizes leads for your team.</p></div>
         </div>
         <div class="cap">
-          <div class="cap-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+          <div class="cap-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
           <div><h3>24/7 customer support</h3><p>Always available. Answers every question with speed, clarity, and professionalism.</p></div>
         </div>
         <div class="cap">
-          <div class="cap-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+          <div class="cap-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
           <div><h3>Human escalation</h3><p>Recognizes high-value leads and hands them to a real agent at exactly the right moment.</p></div>
         </div>
       </div>
@@ -196,9 +215,9 @@
         <p class="section-sub">Share a few details and we'll show you exactly where automation and a sharper
           web presence can win you more clients.</p>
         <ul class="contact-points">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg><span><b>Fast response.</b> We reply within one business day.</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg><span><b>No fluff.</b> A clear scope and a fixed starting offer.</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg><span><b>Built to last.</b> Reusable systems, not throwaway work.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span><b>Fast response.</b> We reply within one business day.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span><b>No fluff.</b> A clear scope and a fixed starting offer.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span><b>Built to last.</b> Reusable systems, not throwaway work.</span></li>
         </ul>
       </div>
 
@@ -230,7 +249,7 @@
     <div class="container">
       <div class="footer-top">
         <div class="footer-brand">
-          <a class="nav-logo" href="index.html"><img src="assets/images/logos/VISION-WhiteNBACK.png" alt="VISION" class="nav-logo-img"> VISION</a>
+          <a class="nav-logo" href="index.html"><img src="assets/images/logos/VISION-NewLogo.png" alt="" width="36" height="36" class="nav-logo-img"> VISION</a>
           <p class="motto">Tomorrow's technology to today's solutions.</p>
         </div>
         <div class="footer-cols">
@@ -263,7 +282,7 @@
 
   <!-- ============ CHAT WIDGET ============ -->
   <button id="chatFab" class="chat-fab" aria-label="Open VISION assistant">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
   </button>
 
   <div id="chatWidget" class="chat-widget hidden" role="dialog" aria-label="VISION Assistant">
@@ -279,7 +298,7 @@
     <div class="chat-input-row">
       <input type="text" id="chatInput" placeholder="Ask about a property…" autocomplete="off">
       <button id="chatSend" class="chat-send" aria-label="Send">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
       </button>
     </div>
   </div>
